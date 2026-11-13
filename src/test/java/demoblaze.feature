@@ -6,7 +6,7 @@ Feature: Pruebas API de Demoblaze
 
   Scenario: Registrar un usuario nuevo
     * def usuario = 'qa_' + java.util.UUID.randomUUID().toString().replace('-', '')
-    * def clave = 'Sofka123'
+    * def clave = 'QaTest123!'
     * def body = { username: '#(usuario)', password: '#(clave)' }
 
     Given path 'signup'
@@ -18,7 +18,7 @@ Feature: Pruebas API de Demoblaze
 
   Scenario: Intentar registrar un usuario existente
     * def usuario = 'qa_duplicado_' + java.util.UUID.randomUUID().toString().replace('-', '')
-    * def clave = 'Sofka123'
+    * def clave = 'QaTest123!'
     * def body = { username: '#(usuario)', password: '#(clave)' }
 
     Given path 'signup'
@@ -35,7 +35,7 @@ Feature: Pruebas API de Demoblaze
 
   Scenario: Login con usuario y contraseña correctos
     * def usuario = 'qa_login_' + java.util.UUID.randomUUID().toString().replace('-', '')
-    * def clave = 'Sofka123'
+    * def clave = 'QaTest123!'
     * def bodyRegistro = { username: '#(usuario)', password: '#(clave)' }
 
     Given path 'signup'
@@ -54,7 +54,7 @@ Feature: Pruebas API de Demoblaze
 
   Scenario: Login con contraseña incorrecta
     * def usuario = 'qa_login_error_' + java.util.UUID.randomUUID().toString().replace('-', '')
-    * def clave = 'Sofka123'
+    * def clave = 'QaTest123!'
     * def bodyRegistro = { username: '#(usuario)', password: '#(clave)' }
 
     Given path 'signup'
