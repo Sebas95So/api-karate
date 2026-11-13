@@ -51,13 +51,13 @@ git --version
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/Sebas95So/sofka-api-karate.git
+git clone https://github.com/Sebas95So/api-karate.git
 ```
 
 ### 2. Entrar en la carpeta del proyecto
 
 ```bash
-cd sofka-api-karate
+cd api-karate
 ```
 
 ### 3. Ejecutar las pruebas
